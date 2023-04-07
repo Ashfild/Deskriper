@@ -23,6 +23,7 @@ app.get("/", (req, res) => {
 app.use("/api/images", express.static("uploads"));
 app.use("/api/soal", soalRouter);
 app.use("/api/jobsheet", jobsheetRouter);
+app.use("/api/category", jobsheetRouter);
 
 app.listen(port, () =>
   console.log(`App listening on port http://localhost:${port}!`)
